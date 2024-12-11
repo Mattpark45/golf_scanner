@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>골프장 티타임 스캐너</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 사이드바 -->
+        <div class="sidebar">
+            <h1>티타임 스캐너</h1>
+            <button id="scanButton" class="scan-button">스캔 시작</button>
+        </div>
+
+        <!-- 메인 컨텐츠 -->
+        <div class="main-content">
+            <!-- 날짜 선택 탭 -->
+            <div class="date-tabs" id="dateTabs"></div>
+            
+            <!-- 골프장 카드 컨테이너 -->
+            <div class="golf-cards" id="golfCards"></div>
+        </div>
+
+        <!-- 알람 영역 -->
+        <div class="alarm-area">
+            <h2>알람 현황</h2>
+            <div class="alarm-count">활성 알람: <span id="alarmCount">0</span>개</div>
+            <div class="alarm-list" id="alarmList"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7FAFC;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+    width: 250px;
+    background-color: #6B46C1;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.scan-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #9F7AEA;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scan-button:hover {
+    background-color: #805AD5;
+}
+
+/* 메인 컨텐츠 스타일 */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* 날짜 탭 스타일 */
+.date-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.date-tab {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid #6B46C1;
+    border-radius: 5px;
+    color: #6B46C1;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.date-tab.active {
+    background-color: #6B46C1;
+    color: white;
+}
+
+/* 골프장 카드 스타일 */
+.golf-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.golf-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.golf-card h3 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.golf-card .location {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.golf-card .price {
+    color: #009688;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.golf-card .teams {
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.golf-card .alarm-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 알람 영역 스타일 */
+.alarm-area {
+    width: 300px;
+    background-color: #E9D8FD;
+    padding: 20px;
+}
+
+.alarm-area h2 {
+    color: #6B46C1;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.alarm-count {
+    color: #6B46C1;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.alarm-list {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    height: calc(100% - 100px);
+    overflow-y: auto;
+}
+
+.alarm-message {
+    padding: 10px;
+    border-bottom: 1px solid #E9D8FD;
+    font-size: 14px;
+}
+
+.alarm-message:last-child {
+    border-bottom: none;
+}
