@@ -1,0 +1,104 @@
+:root {
+    --primary: #6B46C1;
+    --secondary: #9F7AEA;
+    --light: #E9D8FD;
+    --bg: #F7FAFC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr 320px;
+    min-height: 100vh;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+    background-color: var(--primary);
+    padding: 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.scan-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scan-button:hover {
+    background-color: var(--light);
+}
+
+/* 날짜 탭 스타일 */
+.date-tabs {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.date-tab {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.date-tab.active {
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* 골프장 카드 스타일 */
+.golf-cards {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.golf-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 알람 영역 스타일 */
+.alarm-area {
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.alarm-list {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>골프장 티타임 스캐너</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 사이드바 -->
+        <div class="sidebar">
+            <h1 class="logo">티타임 스캐너</h1>
+            <button id="scanButton" class="scan-button">스캔 시작</button>
+        </div>
+
+        <!-- 메인 컨텐츠 -->
+        <div class="main-content">
+            <!-- 날짜 탭 -->
+            <div class="date-tabs" id="dateTabs"></div>
+
+            <!-- 골프장 카드 컨테이너 -->
+            <div class="golf-cards" id="golfCards"></div>
+        </div>
+
+        <!-- 알람 영역 -->
+        <div class="alarm-area">
+            <h2>알람 현황</h2>
+            <div id="activeAlarms">활성 알람: 0개</div>
+            <div class="alarm-list" id="alarmList"></div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
